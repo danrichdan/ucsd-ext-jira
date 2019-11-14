@@ -8,6 +8,8 @@ public final class Data {
 
     // Default Test Data
     public static final String DEFAULT_SEARCH_TEXT = "UCSD";
+    public static final String DEFAULT_SUMMARY_TEXT = "Dan Riches Jira Story Summary";
+    public static final String DEFAULT_DESCRIPTION_TEXT = "As a User...so you see...";
 
     private Data() {
     }

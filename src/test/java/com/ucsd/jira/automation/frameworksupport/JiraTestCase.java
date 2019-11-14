@@ -9,6 +9,7 @@ import com.ucsd.jira.automation.data.Constants;
 import com.ucsd.jira.automation.data.Data;
 import com.ucsd.jira.automation.data.enums.JiraMenu;
 import com.ucsd.jira.automation.data.enums.LeftMenu;
+import oracle.jdbc.driver.Const;
 import org.apache.commons.lang3.StringUtils;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -45,7 +46,17 @@ public abstract class JiraTestCase extends WebTestCase {
             webAction(Constants.CONTINUE_SPAN);
             executeJavascript(combine(JavascriptConstants.ENTER_VALUE_ELEMENT_BY_XPATH, Constants.PASSWORD_INPUT, getCredentials().getPassword()));
             webAction(Constants.LOGIN_SPAN);
-            webElementVisible(Constants.TEST_HEADING);
+//            webElementVisible(Constants.DASHBOARD_HEADING);
+//
+//            webAction(Constants.PLUS_BUTTON);
+//            webElementVisible(Constants.CREATE_ISSUE_MODAL);
+//            webAction(Constants.SUMMARY_INPUT, Data.DEFAULT_SUMMARY_TEXT);
+//            webAction(Constants.DESCRIPTION_TEXT_AREA, Data.DEFAULT_DESCRIPTION_TEXT);
+//            webAction(Constants.CREATE_ISSUE_BUTTON);
+
+//            webAction(Constants.JIRA_HOME_BUTTON);
+
+
         }
 
     }
